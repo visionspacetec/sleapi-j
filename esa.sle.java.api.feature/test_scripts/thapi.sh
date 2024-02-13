@@ -16,7 +16,7 @@ echo "SCRIPTPATH: '${SCRIPTPATH}'"
 export SLEAPI_HOME=${SCRIPTPATH}/../..
 export CLASSPATH=${SLEAPI_HOME}/esa.sle.java.api.core/extlib
 
-CP=${SLEAPI_HOME}/esa.sle.java.api.core/target/esa.sle.java.api.core-5.1.0.jar:${SLEAPI_HOME}/esa.sle.java.api.core.test.harness/target/esa.sle.java.api.core.test.harness-5.1.0.jar:$CLASSPATH/jasn1-compiler-1.11.2.jar\:$CLASSPATH/antlr-2.7.7.jar\:$CLASSPATH/jasn1-1.11.2.jar
+CP=${SLEAPI_HOME}/esa.sle.java.api.core/target/esa.sle.java.api.core-5.1.4.jar:${SLEAPI_HOME}/esa.sle.java.api.core.test.harness/target/esa.sle.java.api.core.test.harness-5.1.4.jar:$CLASSPATH/jasn1-compiler-1.11.2.jar\:$CLASSPATH/antlr-2.7.7.jar\:$CLASSPATH/jasn1-1.11.2.jar
 		
 #echo "Call test harness with arguments: '$*' (CP: ${CP})"
 java -cp "$CP" esa.sle.impl.tst.systst.THApiexe $*
